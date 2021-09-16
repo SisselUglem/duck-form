@@ -1,0 +1,137 @@
+body{
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: #9DBEBB;
+}
+.form-container{
+    max-width: 954px;
+    max-height: 594px;
+    width: 100%;
+    height: 100%;
+    background: #BE0909;
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.25);  
+    display: flex;
+    flex-direction: row; 
+    position: relative;
+    margin-top: 153px;
+    margin-bottom: 153px;
+}
+.duck-form{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    margin-left: 65px;
+}
+.box{
+    max-width: 345px;
+    max-height: 594px;
+    width: 100%;
+    height: 100%;
+    background: #FFB039;
+    display: flex;
+    position: absolute;
+    right: 0%;
+}
+.img{
+    display: flex;
+    max-width: 663px;
+    max-height: 603px;
+    width: 100%;
+    position: relative;
+    left: 342px; /*got stuck here, didn't get position: absolut to work. I wanted to set the right value to -51 & bottom -61*/
+    top: 52px;
+
+}
+label{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FEFFFF;
+}
+.input-field{
+    box-sizing: border-box;
+    max-width: 400px;
+    width: 100%;
+    height: 51px;
+    background: #BE0909;
+    border: none;
+    border-bottom: 1px solid #9DBEBB;
+    margin-bottom: 22px;
+}
+::placeholder { 
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.3em;
+    color: #FEFFFF;
+}
+:-ms-input-placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.3em;
+    color: #FEFFFF;
+}
+::-ms-input-placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: 0.3em;
+    color: #FEFFFF;
+}
+.input-field-two{
+    box-sizing: border-box;
+    max-width: 160px;
+    width: 100%;
+    height: 51px;
+    background: #BE0909;
+    border: none;
+    border-bottom: 1px solid #9DBEBB;
+    margin-bottom: 25px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 34px;
+}
+.button-submit{
+    background: #468189;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+    border: none;
+    width: 202px;
+    height: 48px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
