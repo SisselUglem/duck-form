@@ -4,8 +4,8 @@ body{
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    align-content: center;
+    align-items: center;/*can't get this to work. I had to put margin top & bottom on the form-container*/
+    align-content: center;/*can't get this to work. I had to put margin top & bottom on the form-container*/
     background: #9DBEBB;
 }
 .form-container{
@@ -18,8 +18,8 @@ body{
     display: flex;
     flex-direction: row; 
     position: relative;
-    margin-top: 153px;
-    margin-bottom: 153px;
+    margin-top: 153px;/*did not really want to use this*/
+    margin-bottom: 153px;/*did not really want to use this*/
 }
 .duck-form{
     display: flex;
@@ -57,7 +57,6 @@ label{
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
-    /* identical to box height */
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FEFFFF;
@@ -66,11 +65,35 @@ label{
     box-sizing: border-box;
     max-width: 400px;
     width: 100%;
-    height: 51px;
+    height: 35px;
     background: #BE0909;
     border: none;
     border-bottom: 1px solid #9DBEBB;
     margin-bottom: 22px;
+    margin-top: 10px;
+    padding-top: 6px;
+    padding-left: 9px;
+}
+.input-field:hover{
+    background: #b91212;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+}
+.input-field-two{
+    box-sizing: border-box;
+    max-width: 160px;
+    width: 100%;
+    height: 35px;
+    background: #BE0909;
+    border: none;
+    border-bottom: 1px solid #9DBEBB;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    padding-top: 6px;
+    padding-left: 9px;
+}
+.input-field-two:hover{
+    background: #b91212;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
 }
 ::placeholder { 
     font-family: 'Roboto', sans-serif;
@@ -78,39 +101,26 @@ label{
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
-    /* identical to box height */
     letter-spacing: 0.3em;
     color: #FEFFFF;
 }
 :-ms-input-placeholder {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
-    /* identical to box height */
     letter-spacing: 0.3em;
     color: #FEFFFF;
 }
 ::-ms-input-placeholder {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
-    /* identical to box height */
     letter-spacing: 0.3em;
     color: #FEFFFF;
-}
-.input-field-two{
-    box-sizing: border-box;
-    max-width: 160px;
-    width: 100%;
-    height: 51px;
-    background: #BE0909;
-    border: none;
-    border-bottom: 1px solid #9DBEBB;
-    margin-bottom: 25px;
 }
 .button{
     display: flex;
@@ -129,9 +139,13 @@ label{
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
-    /* identical to box height */
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+.button-submit:hover{
+    background: #58a2ac;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
 }
